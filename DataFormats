@@ -1,1 +1,51 @@
 Quick Map Layer Visualizations with GeoJSON and GeoRSS
+
+1) GeoJSON - a JS friendly format
+Can be called either in-line or loaded from a URL.
+(JSON - JavaScript Object Notation)
+GeoJSON uses JSON to encode geo data structures and is a popular way to share locations
+
+Example of code:
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: 40, lng: -100}
+  });
+  
+  var tempObject = 
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-75.15065, 39.94897]
+    },
+    "properties": {
+      "name": "Congress Hall"
+    }
+  }
+
+  map.data.addGeoJson(tempObject);
+}
+
+2) GeoRSS - derived from syndication format RSS
+Used for adding geo data to an existing content feed - designed to work with RSS feeds
+Two versions: GeoRSS-simple and GeoRSS GML
+GeoRSS-simple is designed to be quick and straight forward - format most commonly used
+
+Example of GeoRSS-simple code:
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: 40, lng: -100}
+  });
+
+  var georssLayer = new google.maps.KmlLayer({
+    url: 'http://api.flickr.com/services/feeds/geo/?g=322338@N20&lang=en-us&format=feed-georss'
+  });
+  georssLayer.setMap(map);
+  }
+  
+  ** need to provide a publicly accessible URL for a GeoRSS feed that is added to a Google Maps platform project with the same JS used with KML
+  
