@@ -1,1 +1,11 @@
 How to get started with Google Maps Platform and get support when you need it
+
+1) Community driven support
+using StackOverflow - sign in with your google accoutn. Google Maps related posts monitored by Google team members to ensure answers are correct.
+
+2) Expert Google Maps Platform customer support
+Create a case through visiting the 'Google Maps Platform Support' page in the Google Cloud Platform Console.
+
+3) Bugs and feature ideas
+Using Issue Tracker - Google maintains and list of known and reported issues. You can view the list, see developer comments and add your own comments.
+Get started by filing int a request with rthe 'Issue Tracker' - including a sample of the code or a screen capture to help with issue ID.
