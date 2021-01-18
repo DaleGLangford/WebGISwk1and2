@@ -1,1 +1,28 @@
 1) How do you make sure Google's maps data is accurate?
+Conntantly maintain and review, allow for user contribution to help keep data up to date
+
+2) How can I submit updated information?
+sending feedback/suggest an edit, API for reporting bad points, working directly with google engineers or an account manager
+
+3)Are there any other ways that google finds updated information beyond user contributions?
+Google has a dedicatedd team working to keep data up to date - includes incorporating data from third party sources, developing algorithms to update data and identify
+spam or fraud, and reaching out directly to businesses and organizations to get accurate data
+
+4) How odften is your maps data updated?
+Constantly (more than 200 contributions every second)
+
+5) If a business or organization has a lot of data to contribute, how can they do that?
+Using the Geo Data Upload tool and sending information in a useable format (.shp or .csv)
+
+6) How do you manage the vast amounts of data it takes to keep up with the changing world?
+Using processing and storage systems like Dataflow and Cloud Spanner, and machine learning libraries and frameworks like TensorFlow
+
+7) Why are there differences in data quality in various parts of the world? And how do you address these differences to make sure businesses everywhere can use Google Maps Platform?
+Because the world operates in many different ways requiring many different approaches to how you map and display information
+(e.g. differences in how postal codes are set out, or how bussinesses operate in buildings)
+
+8) What’s the most interesting way that Google or another organization has contributed maps data?
+Sheep View is noted as a personal favourite - solar powered cameras straped to sheep to collect imagery of the Faroe Islands.
+
+9) With Halloween around the corner, what’s up with all those spooky Street View images of people with three legs or a plane submerged in a lake? 
+Results from the stitching together of images - especially when things are moving - create strange images!
