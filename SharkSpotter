@@ -1,1 +1,4 @@
 https://www.google.com/maps/d/edit?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm&usp=sharing
+
+For embeding
+<iframe src="https://www.google.com/maps/d/embed?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm" width="640" height="480"></iframe>
