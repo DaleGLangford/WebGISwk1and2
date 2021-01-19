@@ -1,4 +1,38 @@
-https://www.google.com/maps/d/edit?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm&usp=sharing
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Dale Langford Final Exam </title>
+<style>
 
-For embeding
-<iframe src="https://www.google.com/maps/d/embed?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm" width="640" height="480"></iframe>
+.body {
+	background-color:white;
+	font-size: 18px;
+	color: black;
+	font-family: arial, helvetica, sans-serif;
+	margin-top: 20px;
+}
+
+</style>
+
+
+<!-- Share link to map -->
+<!-- https://www.google.com/maps/d/edit?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm&usp=sharing -->
+
+
+<!-- embeded map link -->
+<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1k1uUx0DBucdMHYOwbynbntcg9tOuwbjm" width="640" height="480"></iframe> -->
+
+</head> 
+
+<body class = "body">
+
+<div class ="header">
+<h1 class ="title"> Sharkspotter Map</h1>
+<p class = "subtitle"> Map of Shark Spotting Locations and Associated Sightings </p>
+</div>
+
+<div>
+<p id = "footer", class = "foottext"> Sir Sandford Fleming College | Frost Campus | 200 Albert Street South | Lindsay, Ontario, Canada | K9V 5E6 </p>
+</div>
+
+</body>
