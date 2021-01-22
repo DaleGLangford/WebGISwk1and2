@@ -11,3 +11,15 @@
         margin: 0;
         padding: 0;
       }
+
+      .header {
+          font-size: 20px;
+          color: grey;
+          text-align: center;
+      }
+
+      .link {
+          font-size: 10px;
+          color: grey;
+          text-align:center;
+      }
