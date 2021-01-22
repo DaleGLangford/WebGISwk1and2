@@ -14,6 +14,12 @@
 
       .header {
           font-size: 20px;
+          color: rgb(56, 55, 55);
+          text-align: center;
+      }
+
+      .text {
+          font-size: 15px;
           color: grey;
           text-align: center;
       }
