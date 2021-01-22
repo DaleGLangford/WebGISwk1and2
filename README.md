@@ -660,5 +660,18 @@ https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEms
 }
 
 ## Places using own search
+**Search for Thatchers Cider**
+**URL:**
+https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ43rv6Mn3cUgR67nXoKGa0dI&fields=name,rating,formatted_phone_number&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g
 
 
+**Results:**
+{
+   "html_attributions" : [],
+   "result" : {
+      "formatted_phone_number" : "01934 822862",
+      "name" : "Thatchers Cider",
+      "rating" : 4.5
+   },
+   "status" : "OK"
+}
