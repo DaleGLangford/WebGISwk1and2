@@ -11,6 +11,6 @@ function initMap() {
     // 10 = City
     // 15 = Streets 
     // 20 = Buildings
-    zoom: 15,
+    zoom: 17,
   });
 }
