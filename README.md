@@ -2,10 +2,11 @@
 Web GIS Week 1 and 2 checklist
 
 # Directions API:
-Directions from Disney to Univeral Studios
-URL: https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g    
+**Directions from Disney to Univeral Studios**
+*URL:* 
+https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g    
 
-Results:
+*Results:*
 {
    "geocoded_waypoints" : [
       {
@@ -318,9 +319,11 @@ Results:
    "status" : "OK"
 }
 
-Directions from Thatchers Cider Shop to Leg Bender Cider Shop
-URL: https://maps.googleapis.com/maps/api/directions/json?origin=51.333590689260966, -2.8343742083060772&destination=51.2806613659188, -2.772229416903575&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g
-Results:
+**Directions from Thatchers Cider Shop to Leg Bender Cider Shop**
+*URL:*
+https://maps.googleapis.com/maps/api/directions/json?origin=51.333590689260966, -2.8343742083060772&destination=51.2806613659188, -2.772229416903575&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g
+
+*Results:*
 {
    "geocoded_waypoints" : [
       {
