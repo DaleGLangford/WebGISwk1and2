@@ -1,7 +1,7 @@
 # WebGISwk1and2
 Web GIS Week 1 and 2 checklist
 
-Directions API:
+# Directions API:
 Directions from Disney to Univeral Studios
 URL: https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g    
 
@@ -639,3 +639,5 @@ Results:
    ],
    "status" : "OK"
 }
+
+# Places JSON
