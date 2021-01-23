@@ -2,10 +2,12 @@
 <html>
   <head>
     <title>Add Map</title>
+     <!-- defer in the below script allows rest of page to load -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g&callback=initMap&libraries=&v=weekly"
       defer
-    ></script>
+    > </script>
+
     <style type="text/css">
       /* Set the size of the div element that contains the map */
       #map1 {
@@ -14,28 +16,57 @@
         width: 100%;
         /* The width is the width of the web page */
       }
+
+      #map2 {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
     </style>
+
     <script>
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
+        const uluru = { lat: -25.344, lng: 131.036 }; // uluru variable set at lat long
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map1"), {
           zoom: 4,
-          center: uluru,
+          center: uluru, // centres on Uluru
         });
         // The marker, positioned at Uluru
         const marker = new google.maps.Marker({
           position: uluru,
           map: map,
         });
+
+              // Initialize and add the map
+      function initMap() {
+        // The location of Lakehead University
+        const Lakehead = { lat: 48.421, lng: -89.260 }; // Lakehead variable set at lat long
+        // The map, centered at Lakehead
+        const map = new google.maps.Map(document.getElementById("map2"), {
+          zoom: 13,
+          center: Lakehead, // centres on Lakehead
+        });
+        // The marker, positioned at Lakehead
+        const marker = new google.maps.Marker({
+          position: Lakehead,
+          map: map,
+        });
       }
     </script>
+
   </head>
+
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h1>My Google Maps Demo</h1>
     <!--The div element for the map -->
     <div id="map1"></div>
+
+    <h2>Google Maps Marker set on Lakehead University</h2>
+    <div id="map2"></div>
   </body>
+
 </html>
