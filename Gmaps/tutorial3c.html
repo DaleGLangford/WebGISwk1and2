@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial 3c</title>
+     <!-- defer in the below script allows rest of page to load -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g&callback=initMap&libraries=&v=weekly"
+      defer
+    > </script>
+
+    <style type="text/css">
+
+    /* Set the size of the div element that contains the map */
+    #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+
+    .link{
+        font-size: 15px;
+        color: black;
+    }
+
+    body {
+        background-color:rgb(137, 218, 133);
+        font-size: 18px;
+        color: black;
+        font-family: arial, helvetica, sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    h1 {
+        color:rgb(14, 99, 27);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    </style>
+
+    <script>
+        // Initialize and add the map
+      function initMap() {
+        // The location of Lakehead University
+        const Lakehead = { lat: 48.421, lng: -89.260 }; // Lakehead variable set at lat long
+        // The map, centered at Lakehead
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: Lakehead, // centres on Lakehead
+        });
+        // The marker, positioned at Lakehead
+        const marker = new google.maps.Marker({
+          position: Lakehead,
+          map: map,
+        });
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <a class = "link" href="/WebGISwk1and2/index.html" target="_blank">Home</a>
+
+    <h1>Tutorial 3c - Heat Map</h1>
+    <div id="map"></div>
+  </body>
+
+</html>
