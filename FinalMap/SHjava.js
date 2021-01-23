@@ -1,8 +1,8 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 18,
+      zoom: 15,
       // centre on Stone Henge
-      center: { lat: 51.178, lng: -1.826 },
+      center: { lat: 51.17896941504006, lng: -1.8261989083505485 },
     });
     // Create an array of alphabetical characters used to label the markers.
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
