@@ -1,7 +1,8 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
-      center: { lat: -28.024, lng: 140.887 },
+      // centre on Ontario
+      center: { lat: 46.655, lng: -82.902 },
     });
     // Create an array of alphabetical characters used to label the markers.
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -21,6 +22,7 @@ function initMap() {
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
   }
+  // Locations set to Ontario Provincial Parks
   const locations = [
     { lat: -31.56391, lng: 147.154312 },
     { lat: -33.718234, lng: 150.363181 },
