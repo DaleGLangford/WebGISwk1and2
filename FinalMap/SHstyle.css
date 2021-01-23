@@ -42,7 +42,8 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
   padding-bottom: 15px;
-  max-width: 500px;
+  padding-left: 50vw;
+  padding-right: 50vw;
 }
 
 #map {
