@@ -15,7 +15,8 @@ body {
 }
 
 .header {
-	background-color:rgb(66, 111, 20);
+  background-color:rgb(66, 111, 20);
+  top:0px;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -50,4 +51,21 @@ body {
   /* The width is the width of the web page */
   font-size: 15px;
   color: black;
+}
+
+.footer {
+	background-color:rgb(66, 111, 20);
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+	
+.foottext {
+	color: rgb(215, 218, 190);
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
 }
