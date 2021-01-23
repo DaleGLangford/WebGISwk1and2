@@ -1,6 +1,6 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 5,
+      zoom: 3,
       // centre on Ontario
       center: { lat: 46.655, lng: -82.902 },
     });
