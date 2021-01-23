@@ -17,6 +17,34 @@
         padding: 0;
       } 
       
+      .header {
+        background-color:rgb(75, 48, 228);
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      .title {
+        color: rgb(255, 255, 255);
+        font-family: arial, helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        
+      }
+
+      .subtitle {
+        color: rgb(170, 181, 250);
+        font-family: arial, helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+      }
+      
       #map1 {
         height: 400px;
         /* The height is 400 pixels */
@@ -94,8 +122,15 @@
   </head>
 
   <body>
-        <h1>My Google Maps Demo - Tutorial 1</h1>
-    <a href="/WebGISwk1and2/index.html" target="_blank">Home</a>
+
+    <div class ="header">
+      <h1 class ="title"> Tutorial 1</h1>
+      <p class = "subtitle"> Marker maps showing Uluru and Lakehead University </p>
+      <p><a href="/WebGISwk1and2/index.html" target="_blank">Home</a></p>
+      </div>
+
+       <h1>My Google Maps Demo - Tutorial 1</h1>
+    
     <!--The div element for the map -->
     <div id="map1"> Uluru Map should go here.....</div>
 
