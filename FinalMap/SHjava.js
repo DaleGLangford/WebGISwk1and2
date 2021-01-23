@@ -1,8 +1,8 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 3,
-      // centre on Ontario
-      center: { lat: 46.655, lng: -82.902 },
+      zoom: 10,
+      // centre on Stone Henge
+      center: { lat: 51.178, lng: -1.826 },
     });
     // Create an array of alphabetical characters used to label the markers.
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
