@@ -3,9 +3,34 @@
 html,
 body {
   height: 100%;
-  margin: 0;
   padding: 0;
-}  
+  background-color:rgb(137, 218, 133);
+  font-size: 18px;
+  color: black;
+  font-family: arial, helvetica, sans-serif;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.header {
+	background-color:rgb(75, 48, 228);
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.title {
+	color: rgb(255, 255, 255);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 15px;
+	
+}
 
 #map {
   height: 600px;
@@ -14,16 +39,6 @@ body {
   /* The width is the width of the web page */
   font-size: 15px;
   color: black;
-}
-
-body {
-  background-color:rgb(137, 218, 133);
-  font-size: 18px;
-  color: black;
-  font-family: arial, helvetica, sans-serif;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
 }
 
 h1 {
