@@ -8,6 +8,7 @@ body {
   font-size: 18px;
   color: black;
   font-family: arial, helvetica, sans-serif;
+  text-align: center;
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
@@ -22,7 +23,7 @@ body {
 }
 
 .title {
-	color: rgb(56, 93, 56);
+	color: rgb(156, 226, 156);
 	font-family: arial, helvetica, sans-serif;
 	font-size: 30px;
 	font-weight: bold;
@@ -33,7 +34,7 @@ body {
 }
 
 .subtitle {
-	color: rgb(170, 181, 250);
+	color: rgb(215, 218, 190);
 	font-family: arial, helvetica, sans-serif;
 	font-size: 20px;
 	text-align: center;
