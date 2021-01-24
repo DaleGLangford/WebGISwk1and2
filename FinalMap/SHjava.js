@@ -77,7 +77,7 @@ function initMap() {
   // Define the LatLng coordinates for the polygon's path.
   const avenueCoords = [
     { lat: 51.179523912908344, lng: -1.8252399257461556 }, // sw corner
-    { lat: 51.18256715437142, lng: -1.8195303593967194 }, // nw corner
+    { lat: 51.18257409438144, lng: -1.819606395493052 }, // nw corner
     { lat: 51.182547160011154, lng: -1.8192113892175406 }, // ne corner
     { lat: 51.17939402446637, lng: -1.8248940019997915 }, // se corner
   ];
@@ -85,7 +85,7 @@ function initMap() {
   const cursusCoords = [
     { lat: 51.18483569231366, lng: -1.8356648924191814 }, // sw corner 
     { lat: 51.18502230626078, lng: -1.8358363073614685 }, // nw corner 
-    { lat: 51.18546339077806, lng: -1.8307389681993118 }, // ne corner 
+    { lat: 51.18566805237447, lng: -1.8294201594602908 }, // ne corner 
     { lat: 51.18536725733478, lng: -1.8299315136027496 }, // se corner 
   ];
 
