@@ -47,7 +47,7 @@ body {
 .contentHeader {
 	color: rgb(62, 84, 62);
 	font-family: arial, helvetica, sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	margin-bottom: 20px;
 	padding-bottom: 15px;
@@ -57,7 +57,7 @@ body {
 .contents {
 	color: rgb(74, 118, 74);
 	font-family: arial, helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
 	margin-bottom: 20px;
 	padding-bottom: 15px;
