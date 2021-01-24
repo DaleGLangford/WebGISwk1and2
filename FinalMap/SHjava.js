@@ -27,7 +27,7 @@ function initMap() {
       imagePath:
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
-  
+}
 
   // Locations set to Ontario Provincial Parks
   const locations = [
@@ -82,6 +82,6 @@ const cursus = new google.maps.Polygon({
   fillOpacity: 0.35,
 });
 cursus.setMap(map);
-}
+
 
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
