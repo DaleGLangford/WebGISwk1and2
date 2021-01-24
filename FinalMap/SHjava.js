@@ -28,11 +28,6 @@ function initMap() {
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 
-    // on click open info window
-    marker.addListener("click", () => {
-      infowindow.open(map, marker);
-    });
-
 ///////////////////////////////////////POLYGONS///////////////////////////////////////////
 
   // Set polygones for Avenue and Curcus
@@ -59,14 +54,6 @@ function initMap() {
   cursus.setMap(map);
 
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
-
-///////////////////////////////////////INFO WINDOWS///////////////////////////////////////////
-
-const infowindow = new google.maps.InfoWindow({
-  content: Stonehenge,
-});
-
-
 
 
 }
@@ -105,13 +92,3 @@ const infowindow = new google.maps.InfoWindow({
 ///////////////////////////////////////CIRCLES LOCATIONS///////////////////////////////////////////
 
 ///////////////////////////////////////INFO WINDOWS CONTENT///////////////////////////////////////////
-
-const Stonehenge =
-'<div id="content">' +
-'<div id="siteNotice">' +
-"</div>" +
-'<h1 id="firstHeading" class="firstHeading">Stonehenge</h1>' +
-'<div id="bodyContent">' +
-"<p> INFO </p>" +
-"</div>" +
-"</div>";
