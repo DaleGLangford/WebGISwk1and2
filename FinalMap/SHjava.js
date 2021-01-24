@@ -1,6 +1,6 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 12,
+      zoom: 14,
       // centre on Stone Henge
       center: { lat: 51.17896941504006, lng: -1.8261989083505485 },
       mapTypeId: "satellite",
@@ -29,7 +29,7 @@ function initMap() {
     });
 }
 
-  // Locations set to Ontario Provincial Parks
+  // Locations of Stonehenge features
   const locations = [
     { lat: 51.17896941504006, lng: -1.8261989083505485 }, // Stone Henge
     { lat: 51.18047015766694, lng: -1.8231479948025724 }, // Avenue
