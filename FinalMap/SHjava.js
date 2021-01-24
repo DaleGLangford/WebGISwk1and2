@@ -2,7 +2,7 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 14,
       // centre on Stone Henge
-      center: { lat: 51.17896941504006, lng: -1.8261989083505485 },
+      center: { lat: 51.18414374969637, lng: -1.8196466675058371 },
       mapTypeId: "satellite",
     });
 
