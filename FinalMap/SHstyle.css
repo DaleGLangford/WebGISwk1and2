@@ -46,6 +46,27 @@ body {
   padding-right: 20vw;
 }
 
+.header {
+	color: rgb(62, 84, 62);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+.contents {
+	color: rgb(74, 118, 74);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+
 #map {
   height: 600px;
   /* The height is 400 pixels */
