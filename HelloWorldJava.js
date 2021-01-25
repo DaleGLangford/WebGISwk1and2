@@ -12,5 +12,7 @@ function initMap() {
     // 15 = Streets 
     // 20 = Buildings
     zoom: 17,
+    mapTypeId: "satellite",
+
   });
 }
