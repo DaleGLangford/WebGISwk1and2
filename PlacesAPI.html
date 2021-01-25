@@ -2,12 +2,20 @@
 <html>
 <head>
 <title> Places API </title>
+
+<script>
+    var disneyURL = "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g";
+    document.getElementById("disney").innerHTML;
+    </script>
 </head>
 
 <body>
 <div>
 <h1> Places search from tutorial</h1>
+
 <p> URL: https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g</p>    
+<p id="disney"></p>
+
 <iframe src="https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g" title="Directions from Disney to Universal">
 </iframe>
 </div>
