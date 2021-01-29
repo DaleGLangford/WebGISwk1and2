@@ -1,5 +1,7 @@
 /* Set the size of the div element that contains the map */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 html,
 body {
   height: 100%;
