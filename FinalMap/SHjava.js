@@ -114,7 +114,7 @@ function initMap() {
       // fillOpacity: 0.35,
       map,
       center: durringtonCoord[shp].center,
-      radius: 50,
+      radius: 70,
     });
   }
 }
