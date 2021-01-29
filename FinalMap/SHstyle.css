@@ -85,6 +85,19 @@ body {
 	width:40vw;
 }
 
+.contentLink {
+	color: rgb(2, 220, 2);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	vertical-align: middle;
+	width:40vw;
+}
+
 .stoneHenge {
 	margin-top:1vw;
 	margin-bottom: 1vw;
