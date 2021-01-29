@@ -56,10 +56,6 @@ body {
 
 @media only screen and (max-width: 1400px) {
 	.sigList {
-		margin-left: 15vw;
-		margin-right: 15vw;
-		padding-top: 1vw;
-		padding-bottom: 1vw;
 		width:min-content;
 	}
   }
