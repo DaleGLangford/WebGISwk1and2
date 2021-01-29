@@ -17,7 +17,7 @@ function initMap() {
     
     // For custom marker
     // http://maps.google.com/mapfiles/kml/shapes/donut.png
-    const markImage = "http://maps.google.com/mapfiles/kml/pal2/icon18.png"
+    const markImage = "./SHimages/icon18.png"
 
     const markers = locations.map((location, i) => {
       return new google.maps.Marker({
