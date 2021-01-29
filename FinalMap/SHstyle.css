@@ -45,6 +45,13 @@ body {
   	padding-bottom: 15px;
 }
 
+.sigList{
+	padding-left: 5vw;
+	padding-right: 5vw;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .contentHeader {
 	color: rgb(255, 255, 255);
 	font-family: arial, helvetica, sans-serif;
@@ -52,8 +59,8 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
 	padding-bottom: 15px;
-	padding-left: 20vw;
-	padding-right: 20vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 .contents {
 	color: rgb(255, 255, 255);
@@ -64,6 +71,12 @@ body {
 	padding-bottom: 0px;
 	padding-left: 20vw;
 	padding-right: 20vw;
+	float: left;
+}
+
+.stoneHenge {
+	float: right;
+	padding-right: 5vw;
 }
 
 #map {
@@ -92,8 +105,4 @@ body {
 	padding: 10px;
 }
 
-.stoneHenge {
-	float: right;
-	padding-right: 20vw;
 
-}
