@@ -147,6 +147,22 @@ function initMap() {
       radius: 30,
     });
   }
+
+  // Construct the circle for each value in OLD KING BARROW.
+  for (const shp in oldKingsBarrowCoord) {
+    // Add the circle for this city to the map.
+    const oldKingsBarrow = new google.maps.Circle({
+      strokeColor: "#020bfa",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: oldKingsBarrowCoord[shp].center,
+      radius: 30,
+    });
+  }
+
 }
 
 
@@ -233,5 +249,12 @@ const kingBarrowRidgeCoord = {
     center: { lat: 51.17805169857545, lng: -1.8090097068606599 },
   },
 };
+
+const oldKingsBarrowCoord = {
+  BB: {
+    center: { lat: 51.184840037168165, lng: -1.8062063605860426 },
+  },
+};
+
 
 ///////////////////////////////////////INFO WINDOWS CONTENT///////////////////////////////////////////
