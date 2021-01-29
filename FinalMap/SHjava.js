@@ -117,6 +117,21 @@ function initMap() {
       radius: 70,
     });
   }
+
+  // Construct the circle for each value in STONEHENGE.
+  for (const shp in bushBarrowCoord) {
+    // Add the circle for this city to the map.
+    const bushBarrow = new google.maps.Circle({
+      strokeColor: "#020bfa",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: bushBarrowCoord[shp].center,
+      radius: 30,
+    });
+  }
 }
 
 
@@ -180,6 +195,12 @@ const woodHengeCoord = {
 const durringtonCoord = {
   SH: {
     center: { lat: 51.19260045740331, lng: -1.7872243807601182 }, 
+  },
+};
+
+const bushBarrowCoord = {
+  SH: {
+    center: { lat: 51.17046366682797, lng: -1.8347960701686195 },
   },
 };
 
