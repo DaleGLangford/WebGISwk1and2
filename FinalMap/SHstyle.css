@@ -103,7 +103,6 @@ a:hover {
 .stoneHenge {
 	margin-top:1vw;
 	margin-bottom: 1vw;
-	vertical-align: middle;
 	height:auto;
 }
 
@@ -112,6 +111,10 @@ a:hover {
 		display: none;
 	}
   }
+
+.image1{
+	vertical-align: middle;	
+}
 
 #map {
   height: 600px;
