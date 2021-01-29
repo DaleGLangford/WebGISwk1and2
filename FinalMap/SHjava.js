@@ -88,7 +88,7 @@ function initMap() {
     });
   }
 
-  // Construct the circle for each value in STONEHENGE.
+  // Construct the circle for each value in WOODHENGE.
   for (const shp in woodHengeCoord) {
     // Add the circle for this city to the map.
     const woodHenge = new google.maps.Circle({
@@ -103,7 +103,7 @@ function initMap() {
     });
   }
   
-  // Construct the circle for each value in STONEHENGE.
+  // Construct the circle for each value in DURRINGTON.
   for (const shp in durringtonCoord) {
     // Add the circle for this city to the map.
     const durrington = new google.maps.Circle({
@@ -118,7 +118,7 @@ function initMap() {
     });
   }
 
-  // Construct the circle for each value in STONEHENGE.
+  // Construct the circle for each value in BUSHBARROW.
   for (const shp in bushBarrowCoord) {
     // Add the circle for this city to the map.
     const bushBarrow = new google.maps.Circle({
@@ -129,6 +129,21 @@ function initMap() {
       // fillOpacity: 0.35,
       map,
       center: bushBarrowCoord[shp].center,
+      radius: 30,
+    });
+  }
+
+  // Construct the circle for each value in KING BARROW RIDGE.
+  for (const shp in kingBarrowRidgeCoord) {
+    // Add the circle for this city to the map.
+    const kingBarrowRidge = new google.maps.Circle({
+      strokeColor: "#020bfa",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: kingBarrowRidgeCoord[shp].center,
       radius: 30,
     });
   }
@@ -187,23 +202,36 @@ const stoneHengeCoord = {
 };
 
 const woodHengeCoord = {
-  SH: {
+  WH: {
     center: { lat: 51.18940448632424, lng: -1.7857723653369122 },
   },
 };
 
 const durringtonCoord = {
-  SH: {
+  DW: {
     center: { lat: 51.19260045740331, lng: -1.7872243807601182 }, 
   },
 };
 
 const bushBarrowCoord = {
-  SH: {
+  BB: {
     center: { lat: 51.17046366682797, lng: -1.8347960701686195 },
   },
 };
 
+const kingBarrowRidgeCoord = {
 
+  KBR1: {
+    center: { lat: 51.17906973350576, lng: -1.8091179689338022 },
+  },
+
+  KBR2: {
+    center: { lat: 51.1785663745999, lng: -1.809045794218374 },
+  },
+
+  KBR3: {
+    center: { lat: 51.17805169857545, lng: -1.8090097068606599 },
+  },
+};
 
 ///////////////////////////////////////INFO WINDOWS CONTENT///////////////////////////////////////////
