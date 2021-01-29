@@ -83,8 +83,34 @@ body {
 	width:40vw;
 }
 
-.contentLink {
+/* LINKS */
+a:before {
 	color: rgb(2, 220, 2);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	vertical-align: middle;
+	width:40vw;
+}
+
+a:after {
+	color: rgb(220, 55, 33);
+	font-family: arial, helvetica, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	vertical-align: middle;
+	width:40vw;
+}
+a:hover {
+	color: rgb(255, 255, 255);
 	font-family: arial, helvetica, sans-serif;
 	font-size: 15px;
 	text-align: left;
