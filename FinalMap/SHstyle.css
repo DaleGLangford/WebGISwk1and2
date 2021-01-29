@@ -48,10 +48,9 @@ body {
 .sigList{
 	padding-left: 5vw;
 	padding-right: 5vw;
-	margin-top: 5px;
-	margin-bottom: 5px;
 	display:flex;
-	align-self:center;
+	width:auto;
+	Margin: 10px 10px 10px 10px;
 }
 
 .contentHeader {
