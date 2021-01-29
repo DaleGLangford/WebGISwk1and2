@@ -75,12 +75,8 @@ body {
 	padding-right: 10px;
 }
 
-.image{
-	align-content: middle;
-}
-
 .stoneHenge {
-	padding-right: 20px;
+	margin:auto;
 	vertical-align: middle;
 }
 
