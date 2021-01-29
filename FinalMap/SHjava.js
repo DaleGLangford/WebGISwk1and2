@@ -248,6 +248,18 @@ const kingBarrowRidgeCoord = {
   KBR3: {
     center: { lat: 51.17805169857545, lng: -1.8090097068606599 },
   },
+
+  KBR4: {
+    center: { lat: 51.17962818181081, lng: -1.8089888494420296 },
+  },
+
+  KBR5: {
+    center: { lat: 51.18018313450577, lng: -1.8088223143423796 },
+  },
+
+  KBR6: {
+    center: { lat: 51.1806062127655, lng: -1.8086382492322408 },
+  },
 };
 
 const oldKingsBarrowCoord = {
