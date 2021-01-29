@@ -46,10 +46,10 @@ body {
 }
 
 .sigList{
-	padding-left: 30vw;
-	padding-right: 30vw;
+	padding-left: 20%;
+	padding-right: 20%;
 	display:flex;
-	width:auto;
+	width:60%;
 	padding-top: 1vw;
 	padding-bottom: 1vw;
 }
