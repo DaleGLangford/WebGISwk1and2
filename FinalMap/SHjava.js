@@ -14,16 +14,20 @@ function initMap() {
     // Note: The code uses the JavaScript Array.prototype.map() method to
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
+    
+    // For custom marker
+    // http://maps.google.com/mapfiles/kml/shapes/donut.png
+    const markImage = "http://maps.google.com/mapfiles/kml/shapes/donut.png"
 
     const markers = locations.map((location, i) => {
       return new google.maps.Marker({
         position: location,
         label: labels[i % labels.length],
+        icon: markImage,
       });
     });
 
-    // For custom marker
-    // http://maps.google.com/mapfiles/kml/shapes/donut.png
+
 
     // Add a marker clusterer to manage the markers.
     new MarkerClusterer(map, markers, {
@@ -70,7 +74,7 @@ function initMap() {
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
 
   // Construct the circle for each value in STONEHENGE.
-  for (const shp in stoneHenge) {
+  for (const shp in stoneHengeCoord) {
     // Add the circle for this city to the map.
     const stoneHenge = new google.maps.Circle({
       strokeColor: "#8d05fc",
@@ -79,28 +83,28 @@ function initMap() {
       // fillColor: "#FF0000",
       // fillOpacity: 0.35,
       map,
-      center: stoneHenge[shp].center,
+      center: stoneHengeCoord[shp].center,
       radius: 10,
     });
   }
 
-    // Construct the circle for each value in STONEHENGE.
-    for (const shp in woodHenge) {
-      // Add the circle for this city to the map.
-      const woodHenge = new google.maps.Circle({
-        strokeColor: "#35ff03",
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        // fillColor: "#FF0000",
-        // fillOpacity: 0.35,
-        map,
-        center: woodHenge[shp].center,
-        radius: 10,
-      });
-    }
+  // Construct the circle for each value in STONEHENGE.
+  for (const shp in woodHengeCoord) {
+    // Add the circle for this city to the map.
+    const woodHenge = new google.maps.Circle({
+      strokeColor: "#35ff03",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: woodHengeCoord[shp].center,
+      radius: 10,
+    });
+  }
   
-      // Construct the circle for each value in STONEHENGE.
-  for (const shp in durrington) {
+  // Construct the circle for each value in STONEHENGE.
+  for (const shp in durringtonCoord) {
     // Add the circle for this city to the map.
     const durrington = new google.maps.Circle({
       strokeColor: "##fcba05",
@@ -109,7 +113,7 @@ function initMap() {
       // fillColor: "#FF0000",
       // fillOpacity: 0.35,
       map,
-      center: durrington[shp].center,
+      center: durringtonCoord[shp].center,
       radius: 20,
     });
   }
@@ -161,19 +165,19 @@ function initMap() {
 
 ///////////////////////////////////////CIRCLES LOCATIONS///////////////////////////////////////////
 
-const stoneHenge = {
+const stoneHengeCoord = {
   SH: {
     center: { lat: 51.17884746557931, lng: -1.8261648247449185 },
   },
 };
 
-const woodHenge = {
+const woodHengeCoord = {
   SH: {
     center: { lat: 51.18940448632424, lng: -1.7857723653369122 },
   },
 };
 
-const durrington = {
+const durringtonCoord = {
   SH: {
     center: { lat: 51.19260045740331, lng: -1.7872243807601182 }, 
   },
