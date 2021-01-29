@@ -31,6 +31,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	padding-top: 25px;	
+	margin-top: 0px;
 }
 
 .subtitle {
@@ -86,6 +87,7 @@ body {
 	color: rgb(215, 218, 190);
 	font-family: arial, helvetica, sans-serif;
 	text-align: center;
+	margin-top: 0px;
 	margin-bottom: 5px;
 	padding: 10px;
 }
