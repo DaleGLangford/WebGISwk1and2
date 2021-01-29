@@ -76,6 +76,8 @@ body {
 @media only screen and (max-width: 1400px) {
 	.contentHeader {
 		align-items: center;
+		margin-left: 10%;
+		margin-right:10%;
 	}
   }
 
@@ -95,6 +97,8 @@ body {
 @media only screen and (max-width: 1400px) {
 	.contents {
 		align-items: center;
+		margin-left: 10%;
+		margin-right:10%;
 		width:75vw;
 	}
   }
