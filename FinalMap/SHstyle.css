@@ -46,13 +46,21 @@ body {
 }
 
 .sigList{
-	padding-left: 20vw;
-	padding-right: 20vw;
+	margin-left: 15vw;
 	padding-top: 1vw;
 	padding-bottom: 1vw;
 	display:flex;
 	width:min-content;
 }
+
+@media only screen and (max-width: 1400px) {
+	body {
+		margin-left: 15vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
+		width:min-content;
+	}
+  }
 
 .contentHeader {
 	color: rgb(255, 255, 255);
