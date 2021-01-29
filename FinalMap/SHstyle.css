@@ -80,14 +80,6 @@ body {
 	padding-right: 1vw;
 }
 
-@media only screen and (max-width: 1400px) {
-	.contentHeader {
-		align-items: center;
-		margin-left: 10%;
-		margin-right:10%;
-	}
-  }
-
 .contents {
 	color: rgb(255, 255, 255);
 	font-family: arial, helvetica, sans-serif;
@@ -103,9 +95,6 @@ body {
 
 @media only screen and (max-width: 1400px) {
 	.contents {
-		align-items: center;
-		margin-left: 10%;
-		margin-right:10%;
 		width:75vw;
 	}
   }
