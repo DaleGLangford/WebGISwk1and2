@@ -80,6 +80,36 @@ function initMap() {
       radius: 10,
     });
   }
+
+    // Construct the circle for each value in STONEHENGE.
+    for (const shp in woodHenge) {
+      // Add the circle for this city to the map.
+      const woodHenge = new google.maps.Circle({
+        strokeColor: "#35ff03",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        // fillColor: "#FF0000",
+        // fillOpacity: 0.35,
+        map,
+        center: woodHenge[shp].center,
+        radius: 10,
+      });
+    }
+  
+      // Construct the circle for each value in STONEHENGE.
+  for (const shp in durrington) {
+    // Add the circle for this city to the map.
+    const durrington = new google.maps.Circle({
+      strokeColor: "##fcba05",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: durrington[shp].center,
+      radius: 20,
+    });
+  }
 }
 
 
@@ -131,6 +161,18 @@ function initMap() {
 const stoneHenge = {
   SH: {
     center: { lat: 51.17884746557931, lng: -1.8261648247449185 },
+  },
+};
+
+const woodHenge = {
+  SH: {
+    center: { lat: 51.18940448632424, lng: -1.7857723653369122 },
+  },
+};
+
+const durrington = {
+  SH: {
+    center: { lat: 51.19260045740331, lng: -1.7872243807601182 }, 
   },
 };
 
