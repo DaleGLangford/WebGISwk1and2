@@ -71,6 +71,17 @@ function initMap() {
   });
   cursusBarrow.setMap(map);
 
+    // Construct the  cursus polygon.
+    const longBarrow = new google.maps.Polygon({
+      paths: longBarrowCoords,
+      strokeColor: "#17ad46",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#f5aa0a",
+      // fillOpacity: 0.35,
+    });
+    longBarrow.setMap(map);
+
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
 
   // Construct the circle for each value in STONEHENGE.
@@ -207,6 +218,14 @@ function initMap() {
     { lat: 51.18374409204125, lng: -1.8290507335212534 }, // 51.18374409204125, -1.8290507335212534
     { lat: 51.183806298250005, lng: -1.8309182542854314 }, // 51.183806298250005, -1.8309182542854314
     { lat: 51.183882642118746, lng: -1.8334714348470855 }, // 51.183882642118746, -1.8334714348470855
+  ];
+
+  const longBarrowCoords = [
+    // Starting from NW clockwise
+    { lat: 51.18736271584622, lng: -1.8053449807798465 }, // sw corner 
+    { lat: 51.18805216907277, lng: -1.805292390748378 }, // nw corner  
+    { lat: 51.18803843504543, lng: -1.8048760529992534 }, // ne corner 
+    { lat: 51.187370956383944, lng: -1.804858522988764 }, // se corner
   ];
 
 ///////////////////////////////////////CIRCLES LOCATIONS///////////////////////////////////////////
