@@ -45,7 +45,7 @@ body {
   	padding-bottom: 15px;
 }
 
-.sigList{
+.sigList {
 	margin-left: 15vw;
 	margin-right: 15vw;
 	padding-top: 1vw;
@@ -55,7 +55,7 @@ body {
 }
 
 @media only screen and (max-width: 1400px) {
-	body {
+	.sigList {
 		margin-left: 15vw;
 		margin-right: 15vw;
 		padding-top: 1vw;
