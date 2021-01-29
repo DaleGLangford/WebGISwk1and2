@@ -137,7 +137,7 @@ function initMap() {
   for (const shp in kingBarrowRidgeCoord) {
     // Add the circle for this city to the map.
     const kingBarrowRidge = new google.maps.Circle({
-      strokeColor: "#fc95cc",
+      strokeColor: "#8ccef5",
       strokeOpacity: 0.8,
       strokeWeight: 2,
       // fillColor: "#FF0000",
@@ -152,7 +152,7 @@ function initMap() {
   for (const shp in oldKingsBarrowCoord) {
     // Add the circle for this city to the map.
     const oldKingsBarrow = new google.maps.Circle({
-      strokeColor: "#e0c9f2",
+      strokeColor: "#fa96cb",
       strokeOpacity: 0.8,
       strokeWeight: 2,
       // fillColor: "#FF0000",
