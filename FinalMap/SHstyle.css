@@ -73,6 +73,7 @@ body {
   /* The width is the width of the web page */
   font-size: 15px;
   color: black;
+  margin-bottom: 50px;
 }
 
 .footer {
