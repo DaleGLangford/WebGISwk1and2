@@ -56,16 +56,16 @@ function initMap() {
   });
   cursus.setMap(map);
 
-    // Construct the  cursus polygon.
-    const cursusBarrow = new google.maps.Polygon({
-      paths: cursusBarrowCoords,
-      strokeColor: "#fa05ee",
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      // fillColor: "#f5aa0a",
-      // fillOpacity: 0.35,
-    });
-    cursusBarrow.setMap(map);
+  // Construct the  cursus polygon.
+  const cursusBarrow = new google.maps.Polygon({
+    paths: cursusBarrowCoords,
+    strokeColor: "#fa05ee",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    // fillColor: "#f5aa0a",
+    // fillOpacity: 0.35,
+  });
+  cursusBarrow.setMap(map);
 
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
 
