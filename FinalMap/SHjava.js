@@ -17,7 +17,7 @@ function initMap() {
     
     // For custom marker
     // http://maps.google.com/mapfiles/kml/shapes/donut.png
-    const markImage = "http://maps.google.com/mapfiles/kml/shapes/donut.png"
+    const markImage = "http://maps.google.com/mapfiles/kml/pal2/icon18.png"
 
     const markers = locations.map((location, i) => {
       return new google.maps.Marker({
@@ -84,7 +84,7 @@ function initMap() {
       // fillOpacity: 0.35,
       map,
       center: stoneHengeCoord[shp].center,
-      radius: 10,
+      radius: 30,
     });
   }
 
@@ -99,7 +99,7 @@ function initMap() {
       // fillOpacity: 0.35,
       map,
       center: woodHengeCoord[shp].center,
-      radius: 10,
+      radius: 30,
     });
   }
   
@@ -114,7 +114,7 @@ function initMap() {
       // fillOpacity: 0.35,
       map,
       center: durringtonCoord[shp].center,
-      radius: 20,
+      radius: 50,
     });
   }
 }
