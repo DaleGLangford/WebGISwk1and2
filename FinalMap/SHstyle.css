@@ -72,6 +72,13 @@ body {
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
+
+@media only screen and (max-width: 1400px) {
+	.contentHeader {
+		align-items: center;
+	}
+  }
+
 .contents {
 	color: rgb(255, 255, 255);
 	font-family: arial, helvetica, sans-serif;
@@ -84,6 +91,12 @@ body {
 	vertical-align: middle;
 	width:40vw;
 }
+
+@media only screen and (max-width: 1400px) {
+	.contents {
+		align-items: center;
+	}
+  }
 
 /* LINKS */
 a {
