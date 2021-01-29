@@ -22,6 +22,9 @@ function initMap() {
       });
     });
 
+    // For custom marker
+    // http://maps.google.com/mapfiles/kml/shapes/donut.png
+
     // Add a marker clusterer to manage the markers.
     new MarkerClusterer(map, markers, {
       imagePath:
@@ -54,7 +57,7 @@ function initMap() {
   cursus.setMap(map);
 
     // Construct the  cursus polygon.
-    const cursus = new google.maps.Polygon({
+    const cursusBarrow = new google.maps.Polygon({
       paths: cursusBarrowCoords,
       strokeColor: "#fa05ee",
       strokeOpacity: 0.8,
@@ -62,7 +65,7 @@ function initMap() {
       // fillColor: "#f5aa0a",
       // fillOpacity: 0.35,
     });
-    cursus.setMap(map);
+    cursusBarrow.setMap(map);
 
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
 
