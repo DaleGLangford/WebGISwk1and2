@@ -86,19 +86,13 @@ body {
 }
 
 /* LINKS */
-a:before {
+a {
 	color: rgb(2, 220, 2);
 	font-family: arial, helvetica, sans-serif;
 	font-size: 15px;
 	text-decoration: none;
 }
 
-a:after {
-	color: rgb(220, 55, 33);
-	font-family: arial, helvetica, sans-serif;
-	font-size: 15px;
-	text-decoration: none;
-}
 a:hover {
 	color: rgb(255, 255, 255);
 	font-family: arial, helvetica, sans-serif;
