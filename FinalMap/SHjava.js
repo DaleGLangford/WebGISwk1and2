@@ -204,8 +204,8 @@ function initMap() {
   const cursusCoords = [
     { lat: 51.18483569231366, lng: -1.8356648924191814 }, // sw corner 
     { lat: 51.18512734633522, lng: -1.835834319743218 }, // nw corner  
-    { lat: 51.185580842153016, lng: -1.830094968103578 }, // ne corner 
-    { lat: 51.18536725733478, lng: -1.8299315136027496 }, // se corner 
+    { lat: 51.18756985147004, lng: -1.8054408946379459 }, // ne corner 
+    { lat: 51.18737820158876, lng: -1.80540334371316 }, // se corner 
   ];
 
   const cursusBarrowCoords = [
