@@ -37,7 +37,7 @@ function initMap() {
     strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    // fillColor: "#FF0000",
     fillOpacity: 0.35,
   });
   avenue.setMap(map);
@@ -48,15 +48,40 @@ function initMap() {
     strokeColor: "#f5aa0a",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#f5aa0a",
+    // fillColor: "#f5aa0a",
     fillOpacity: 0.35,
   });
   cursus.setMap(map);
 
+    // Construct the  cursus polygon.
+    const cursus = new google.maps.Polygon({
+      paths: cursusBarrowCoords,
+      strokeColor: "#fa05ee",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#f5aa0a",
+      // fillOpacity: 0.35,
+    });
+    cursus.setMap(map);
+
 ///////////////////////////////////////CIRCLES///////////////////////////////////////////
 
-
+  // Construct the circle for each value in STONEHENGE.
+  for (const shp in stoneHenge) {
+    // Add the circle for this city to the map.
+    const stoneHenge = new google.maps.Circle({
+      strokeColor: "#8d05fc",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      // fillColor: "#FF0000",
+      // fillOpacity: 0.35,
+      map,
+      center: stoneHenge[shp].center,
+      radius: 10,
+    });
+  }
 }
+
 
 ///////////////////////////////////////FEATURE LOCATIONS///////////////////////////////////////////
   const locations = [
@@ -89,6 +114,26 @@ function initMap() {
     { lat: 51.18536725733478, lng: -1.8299315136027496 }, // se corner 
   ];
 
+  const cursusBarrowCoords = [
+    // Starting from NW clockwise
+    { lat: 51.1843039448978, lng: -1.8333676836935195 }, // 51.1843039448978, -1.8333676836935195
+    { lat: 51.184493388516515, lng: -1.8312475514250086 }, // 51.184493388516515, -1.8312475514250086 
+    { lat: 51.184507526068764, lng: -1.8292401921495034 }, // 51.184507526068764, -1.8292401921495034 
+    { lat: 51.18433504763488, lng: -1.828698881783075 }, // 51.18433504763488, -1.828698881783075
+    { lat: 51.184004226537525, lng: -1.828685349023914 }, // 51.184004226537525, -1.828685349023914
+    { lat: 51.18374409204125, lng: -1.8290507335212534 }, // 51.18374409204125, -1.8290507335212534
+    { lat: 51.183806298250005, lng: -1.8309182542854314 }, // 51.183806298250005, -1.8309182542854314
+    { lat: 51.183882642118746, lng: -1.8334714348470855 }, // 51.183882642118746, -1.8334714348470855
+  ];
+
 ///////////////////////////////////////CIRCLES LOCATIONS///////////////////////////////////////////
+
+const stoneHenge = {
+  SH: {
+    center: { lat: 51.17884746557931, lng: -1.8261648247449185 },
+  },
+};
+
+
 
 ///////////////////////////////////////INFO WINDOWS CONTENT///////////////////////////////////////////
