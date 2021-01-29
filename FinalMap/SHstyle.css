@@ -46,11 +46,12 @@ body {
 }
 
 .sigList{
-	padding-left: 5vw;
-	padding-right: 5vw;
+	padding-left: 30vw;
+	padding-right: 30vw;
 	display:flex;
 	width:auto;
-	Margin: 10px 10px 10px 10px;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
 }
 
 .contentHeader {
