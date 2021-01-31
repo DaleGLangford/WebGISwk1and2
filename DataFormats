@@ -29,8 +29,8 @@ function initMap() {
 }
 
 2) GeoRSS - derived from syndication format RSS
-Used for adding geo data to an existing content feed - designed to work with RSS feeds
-Two versions: GeoRSS-simple and GeoRSS GML
+Used for adding geo data to an existing content feed - designed to work with RSS feeds  -WEB FEEDS
+Two versions: GeoRSS-simple and GeoRSS GML (Geography Markup Language)
 GeoRSS-simple is designed to be quick and straight forward - format most commonly used
 
 Example of GeoRSS-simple code:
