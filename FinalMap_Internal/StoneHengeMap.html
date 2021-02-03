@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prehistoric Wiltshire</title>
+     <!-- defer in the below script allows rest of page to load -->
+     <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g&callback=initMap&libraries=&v=weekly"
+     defer
+   > </script>
+   
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script>
+        
+        let map;
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 14,
+              // centre on Stone Henge
+              center: { lat: 51.18414374969637, lng: -1.8196466675058371 },
+              mapTypeId: "satellite",
+            });
+        
+        ///////////////////////////////////////MARKERS///////////////////////////////////////////
+        
+            // alphabetical characters used to label the markers.
+            const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            
+            // For custom marker
+            // from 
+            const markImage = "./SHimages/icon18.png"
+        
+            const markers = locations.map((location, i) => {
+              return new google.maps.Marker({
+                position: location,
+                label: labels[i % labels.length],
+                icon: markImage,
+              });
+            });
+        
+        
+        
+            // marker clusterer to manage the markers.
+            new MarkerClusterer(map, markers, {
+              imagePath:
+                "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+            });
+        
+        ///////////////////////////////////////POLYGONS///////////////////////////////////////////
+        
+          // Polygon and shape information from: https://developers.google.com/maps/documentation/javascript/shapes
+          // Set polygones for Avenue and Curcus
+          // Construct the avenue polygon.
+          const avenue = new google.maps.Polygon({
+            paths: avenueCoords,
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            // fillColor: "#FF0000",
+            fillOpacity: 0.35,
+          });
+          avenue.setMap(map);
+        
+          // Construct the  cursus polygon.
+          const cursus = new google.maps.Polygon({
+            paths: cursusCoords,
+            strokeColor: "#f5aa0a",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            // fillColor: "#f5aa0a",
+            fillOpacity: 0.35,
+          });
+          cursus.setMap(map);
+        
+          // Construct the  cursus polygon.
+          const cursusBarrow = new google.maps.Polygon({
+            paths: cursusBarrowCoords,
+            strokeColor: "#fa05ee",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            // fillColor: "#f5aa0a",
+            // fillOpacity: 0.35,
+          });
+          cursusBarrow.setMap(map);
+        
+            // Construct the  cursus polygon.
+            const longBarrow = new google.maps.Polygon({
+              paths: longBarrowCoords,
+              strokeColor: "#17ad46",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#f5aa0a",
+              // fillOpacity: 0.35,
+            });
+            longBarrow.setMap(map);
+        
+        ///////////////////////////////////////CIRCLES///////////////////////////////////////////
+        
+          // Construct the circle for each value in STONEHENGE.
+          for (const shp in stoneHengeCoord) {
+            // Add the circle for this city to the map.
+            const stoneHenge = new google.maps.Circle({
+              strokeColor: "#8d05fc",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: stoneHengeCoord[shp].center,
+              radius: 30,
+            });
+          }
+        
+          // Construct the circle for each value in WOODHENGE.
+          for (const shp in woodHengeCoord) {
+            // Add the circle for this city to the map.
+            const woodHenge = new google.maps.Circle({
+              strokeColor: "#f8fc03",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: woodHengeCoord[shp].center,
+              radius: 30,
+            });
+          }
+          
+          // Construct the circle for each value in DURRINGTON.
+          for (const shp in durringtonCoord) {
+            // Add the circle for this city to the map.
+            const durrington = new google.maps.Circle({
+              strokeColor: "#02faf6",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: durringtonCoord[shp].center,
+              radius: 70,
+            });
+          }
+        
+          // Construct the circle for each value in BUSHBARROW.
+          for (const shp in bushBarrowCoord) {
+            // Add the circle for this city to the map.
+            const bushBarrow = new google.maps.Circle({
+              strokeColor: "#020bfa",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: bushBarrowCoord[shp].center,
+              radius: 30,
+            });
+          }
+        
+          // Construct the circle for each value in KING BARROW RIDGE.
+          for (const shp in kingBarrowRidgeCoord) {
+            // Add the circle for this city to the map.
+            const kingBarrowRidge = new google.maps.Circle({
+              strokeColor: "#8ccef5",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: kingBarrowRidgeCoord[shp].center,
+              radius: 30,
+            });
+          }
+        
+          // Construct the circle for each value in OLD KING BARROW.
+          for (const shp in oldKingsBarrowCoord) {
+            // Add the circle for this city to the map.
+            const oldKingsBarrow = new google.maps.Circle({
+              strokeColor: "#fa96cb",
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              // fillColor: "#FF0000",
+              // fillOpacity: 0.35,
+              map,
+              center: oldKingsBarrowCoord[shp].center,
+              radius: 30,
+            });
+          }
+        
+        }
+        
+        
+        ///////////////////////////////////////FEATURE LOCATIONS///////////////////////////////////////////
+          const locations = [
+            { lat: 51.17896941504006, lng: -1.8261989083505485 }, // Stone Henge
+            { lat: 51.18047015766694, lng: -1.8231479948025724 }, // Avenue
+            { lat: 51.18509521520769, lng: -1.8340513592077423 }, // Cursus
+            { lat: 51.18413978703078, lng: -1.8309588686939435 }, //Cursus Barrows
+            { lat: 51.17855786938449, lng: -1.8090608177386087 }, // King Barrow Ridge
+            { lat: 51.184776668529615, lng: -1.8060699806071134 }, // Old Kings Barrow
+            { lat: 51.18771646655638, lng: -1.804865932124448 }, // Long Barrow
+            { lat: 51.17047295274773, lng: -1.8347242659363576 }, // Bush Barrow
+            { lat: 51.189385040727416, lng: -1.7857622285233417 }, // Wood Henge
+            { lat: 51.19268362244375, lng: -1.7872467287312461 }, // Durrington Walls
+          ];
+        ///////////////////////////////////////POLYGONS LOCATIONS///////////////////////////////////////////
+        
+          // Set polygones for Avenue and Curcus
+          // Define the LatLng coordinates for the polygon's path.
+          const avenueCoords = [
+            { lat: 51.179523912908344, lng: -1.8252399257461556 }, // sw corner
+            { lat: 51.18257409438144, lng: -1.819606395493052 }, // nw corner 
+            { lat: 51.182547160011154, lng: -1.8192113892175406 }, // ne corner
+            { lat: 51.17939402446637, lng: -1.8248940019997915 }, // se corner
+          ];
+        
+          const cursusCoords = [
+            { lat: 51.18483569231366, lng: -1.8356648924191814 }, // sw corner 
+            { lat: 51.18512734633522, lng: -1.835834319743218 }, // nw corner  
+            { lat: 51.18756985147004, lng: -1.8054408946379459 }, // ne corner 
+            { lat: 51.18737820158876, lng: -1.80540334371316 }, // se corner 
+          ];
+        
+          const cursusBarrowCoords = [
+            // Starting from NW clockwise
+            { lat: 51.1843039448978, lng: -1.8333676836935195 }, // 51.1843039448978, -1.8333676836935195
+            { lat: 51.184493388516515, lng: -1.8312475514250086 }, // 51.184493388516515, -1.8312475514250086 
+            { lat: 51.184507526068764, lng: -1.8292401921495034 }, // 51.184507526068764, -1.8292401921495034 
+            { lat: 51.18433504763488, lng: -1.828698881783075 }, // 51.18433504763488, -1.828698881783075
+            { lat: 51.184004226537525, lng: -1.828685349023914 }, // 51.184004226537525, -1.828685349023914
+            { lat: 51.18374409204125, lng: -1.8290507335212534 }, // 51.18374409204125, -1.8290507335212534
+            { lat: 51.183806298250005, lng: -1.8309182542854314 }, // 51.183806298250005, -1.8309182542854314
+            { lat: 51.183882642118746, lng: -1.8334714348470855 }, // 51.183882642118746, -1.8334714348470855
+          ];
+        
+          const longBarrowCoords = [
+            // Starting from NW clockwise
+            { lat: 51.18736271584622, lng: -1.8053449807798465 }, // sw corner 
+            { lat: 51.18805216907277, lng: -1.805292390748378 }, // nw corner  
+            { lat: 51.18803843504543, lng: -1.8048760529992534 }, // ne corner 
+            { lat: 51.187370956383944, lng: -1.804858522988764 }, // se corner
+          ];
+        
+        ///////////////////////////////////////CIRCLES LOCATIONS///////////////////////////////////////////
+        
+        const stoneHengeCoord = {
+          SH: {
+            center: { lat: 51.17884746557931, lng: -1.8261648247449185 },
+          },
+        };
+        
+        const woodHengeCoord = {
+          WH: {
+            center: { lat: 51.18940448632424, lng: -1.7857723653369122 },
+          },
+        };
+        
+        const durringtonCoord = {
+          DW: {
+            center: { lat: 51.19260045740331, lng: -1.7872243807601182 }, 
+          },
+        };
+        
+        const bushBarrowCoord = {
+          BB: {
+            center: { lat: 51.17046366682797, lng: -1.8347960701686195 },
+          },
+        };
+        
+        const kingBarrowRidgeCoord = {
+        
+          KBR1: {
+            center: { lat: 51.17906973350576, lng: -1.8091179689338022 },
+          },
+        
+          KBR2: {
+            center: { lat: 51.1785663745999, lng: -1.809045794218374 },
+          },
+        
+          KBR3: {
+            center: { lat: 51.17805169857545, lng: -1.8090097068606599 },
+          },
+        
+          KBR4: {
+            center: { lat: 51.17962818181081, lng: -1.8089888494420296 },
+          },
+        
+          KBR5: {
+            center: { lat: 51.18018313450577, lng: -1.8088223143423796 },
+          },
+        
+          KBR6: {
+            center: { lat: 51.1806062127655, lng: -1.8086382492322408 },
+          },
+        };
+        
+        const oldKingsBarrowCoord = {
+          BB: {
+            center: { lat: 51.184840037168165, lng: -1.8062063605860426 },
+          },
+        };
+
+
+    </script>
+
+
+
+    <style>
+
+/* Google fonts from: https://fonts.google.com/specimen/Montserrat?preview.text_type=custom */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  background-color:#313830;
+  font-size: 18px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.header {
+  background-color:rgb(66, 111, 20);
+  top:0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.title {
+	color: rgb(156, 226, 156);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;	
+	margin-top: 0px;
+}
+
+.subtitle {
+	color: rgb(215, 218, 190);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+  	padding-bottom: 15px;
+}
+
+.sigList {
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	display:flex;
+	width:min-content;
+}
+
+/* Media sizing for mobile */ 
+@media only screen and (max-width: 1400px) {
+	.sigList {
+		margin-left: 5vw;
+		margin-right: 0;
+		width:min-content;
+	}
+  }
+
+  @media only screen and (max-width: 1400px) {
+.contentDiv {
+	margin-left:10%;
+	margin-right:10%
+	}
+}
+
+.contentHeader {
+	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.contents {
+	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	vertical-align: middle;
+	width:40vw;
+}
+
+/* Media sizing for mobile */
+@media only screen and (max-width: 1400px) {
+	.contents {
+		width:75vw;
+	}
+  }
+
+/* LINKS */
+a {
+	color: rgb(2, 220, 2);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.stoneHenge {
+	margin-top:6vw;
+	height:auto;
+}
+
+/* Media sizing for mobile */
+@media only screen and (max-width: 1400px) {
+	.stoneHenge {
+		display: none;
+	}
+  }
+
+.image1{
+	vertical-align: middle;	
+}
+
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  font-size: 15px;
+  color: black;
+}
+
+.footer {
+	background-color:rgb(66, 111, 20);
+	position: static;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+	
+.foottext {
+	color: rgb(215, 218, 190);
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div class = "header">   
+    <h1 class="title">The Prehistoric Landscape of Stonehenge</h1>
+    <p class="subtitle">The following map provides general locations of features relating to the prehistoric landscape surrounding Stonehenge. While many are familiar with Stone Henge itself,
+       the surrounding landscape provides an even greater wealth of information and resources through which to explore the past landuse before, during, and after the time od Stone Henge. 
+       With henges, burial mounds, earthworks, and settlements, the local landscape is a tangible link to England's past. Please explore this map to discover how rich the Stonehenge landscape is.
+    </p>
+    </div> 
+
+    <div class="sigList">
+
+      <div class="contentDiv">
+        <h1 class="contentHeader"> Significant Features</h1>
+        <p class="contents">A) Stonehenge: A prehistoric temple consisting of a bank, ditch, and standing stones. The monument was built in stages between 3000 and 2300 BC (Purple)</p>
+        <p class="contents">B) The Avenue: Corridor  lined with a bank and ditch on either side, the avenue extends 1.7 miles from the River Avon and may have been a processional 
+          approach built in 2300BC to approach Stonehenge (Partial section shown in Red)</p>
+        <p class="contents">C) Cursus: A neolithic cursus dating to between 3630 and 3370 BC, the monument consists of a 3km long earthwork corridor lined with a bank and ditch (Orange)</p>
+        <p class="contents">D) Cursus Barrows: In total approximately 19 early Bronze Age barrows lining the cursus (Five shown in bright pink outline)</p>
+        <p class="contents">E) King Barrow Ridge: Series of six early Bronze Age round barrows dating to around 1700 BC. These barrows have not been excavated (Light blue)</p>
+        <p class="contents">F) Old Kings Barrow: Example of early Bronze Age round barrow dating to approximately 1700 BC (Light pink)</p>
+        <p class="contents">G) Long Barrow: The Amesbury 42 Long Barrow built approximately 3500 BC (Green)</p>
+        <p class="contents">H) Bush Barrow: One of a large number of early Bronze Age round barrows located south of Stonehenge. The Bush Barrow, excavated in 1808
+           is among one of the richest early Bronze Age graves in Europe (Dark blue - note the large number of barrows nearby) </p>
+        <p class="contents">I) Wood Henge: Timber monument built around the time of Stonehenge consisting of six concentric ovals where timbers would have stood and an outer bank and ditch (Yellow)</p>
+        <p class="contents">J) Durrington Walls: A large circular henge approximately 400 metres in diameter. The henge was constructed on the site of an earlier neolithic settlement (Teal)</p>
+        <p class="contents">The above locations provide only a small sample of the documented monuments of the Stonehenge landscape. To further explore the history of this
+           area visit the English Heritage <a  class="contentLink" href="https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/stonehenge-landscape/" target="_blank">Stonehenge Interactive Landscape.</a> map</p>
+      </div>      
+      <div class="stoneHenge">
+        <img class="image1"src="./SHimages/StoneHenge.jpg" alt="Image of Stonehenge" width="500" height="375">
+      </div>
+  </div>
+    
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+
+
+    <div class = "footer">
+    <p class = "foottext"> Week One - Check List Work </p>
+    <p class = "foottext"><a  href="/WebGISwk1and2/index.html" target="_blank">Return to Week 1/2 Home</a></p>
+    </div>
+
+  </body>
+
+</html>
