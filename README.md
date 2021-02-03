@@ -646,6 +646,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=51.333590689260966, 
    ],
    "status" : "OK"
 }
+```
 
 # Places JSON
 **using details provided in tutotial**
@@ -653,6 +654,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=51.333590689260966, 
 https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&key=AIzaSyA9JiOUjKB61eY3aT_ZmBv5K4u8tjX_d9g
 
 **Results:**
+```
 {
    "html_attributions" : [],
    "result" : {
@@ -662,6 +664,7 @@ https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEms
    },
    "status" : "OK"
 }
+```
 
 ## Places using own search
 **Search for Thatchers Cider**
@@ -670,6 +673,8 @@ https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ43rv6Mn3cUg
 
 
 **Results:**
+
+```
 {
    "html_attributions" : [],
    "result" : {
@@ -680,3 +685,4 @@ https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ43rv6Mn3cUg
    "status" : "OK"
 }
 ```
+
